@@ -27,7 +27,7 @@ go run ./ccvalidator
 ```
 You should then notice a message that the REST API server started and is listening for any requests. 
 Since we were using the **go-arg** external package, you can add to the go run command an IP Address argument if you want to run this on a specific IP Address, otherwise the server will run on localhost on port 8080 as default. 
-In the HTTP client of your choice, make sure you choose as request type  **GET**,  **http://127.0.0.1:8080/creditcard/get** in the URL if it runs on localhost and in the request body enter as JSON content the following format:  **{"ccNum":"card_number"}** . Lastly, hit the Send button on the http client to send the request. As output, you should see a following type of response back: 
+In the HTTP client of your choice, make sure you choose as request type  **GET**, <br> **http://127.0.0.1:8080/creditcard/get** in the URL if it runs on localhost and in the request body enter as JSON content the following format:  **{"ccNum":"card_number"}** . Lastly, hit the Send button on the http client to send the request. As output, you should see a following type of response back: 
 ```
 {
   "cardNum": "the_card_number_you_made_the_request_with",
